@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<results xmlns:trx="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <result>
+    <className>DeviceServiceTest</className>
+    <method>VerifyDeviceBlockedStatusShouldReturnBlockedIfAtleastOneRecordFound</method>
+    <outcome>Passed</outcome>
+  </result>
+</results>
