@@ -6,7 +6,7 @@
 	<xsl:template match="/">
 		<results>
 		  <!-- this is where we'd need to add a category predicate -->
-		  <xsl:apply-templates select="//trx:TestMethod[../trx:TestCategory/trx:TestCategoryItem/@TestCategory='Spec Test']" >
+		  <xsl:apply-templates select="//trx:TestMethod[../trx:TestCategory/trx:TestCategoryItem/@TestCategory='Specification']" >
 			<xsl:sort select="@className" />
 		  </xsl:apply-templates>
 		</results>

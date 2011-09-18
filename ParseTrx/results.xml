@@ -1,8 +1,438 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <results xmlns:trx="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <result>
-    <className>DeviceServiceTest</className>
-    <method>VerifyDeviceBlockedStatusShouldReturnBlockedIfAtleastOneRecordFound</method>
+    <className>ClientSpecification+When_assigning_a_tier_value</className>
+    <method>Should add the tier to the tiervalue collection</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientSpecification+When_assigning_a_tier_value+When_the_client_is_already_tiered_on_this_list</className>
+    <method>Should throw invalidoperationexception</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientSpecification+When_changing_the_cis_code</className>
+    <method>Should change the ciscode to the given value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientSpecification+When_changing_the_country</className>
+    <method>Should change the country to the given value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientSpecification+When_changing_the_name</className>
+    <method>Should change the name to the given value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientSpecification+When_changing_the_subsector</className>
+    <method>Should change the sales hierarchy to the given value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientSpecification+When_inactivating</className>
+    <method>Should set the isactive flag to false</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientSpecification+When_unassigning_a_tier_value</className>
+    <method>Should remove the tier from the tiervalue collection</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientSpecification+When_unassigning_a_tier_value+When_the_client_isnt_tiered_with_this_value</className>
+    <method>Should throw invalidoperationexception</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>SectorSpecification+When_a_sector_with_no_subsectors_is_inactivated</className>
+    <method>Should set the isactive flag to false</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>SectorSpecification+When_changing_the_description</className>
+    <method>Should change the description to the given value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>SectorSpecification+When_the_sector_has_subsectors</className>
+    <method>Should not allow inactivation</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>SubsectorSpecification+When_a_subsector_with_no_clients_is_inactivated</className>
+    <method>Should set the isactive flag to false</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>SubsectorSpecification+When_changing_the_description</className>
+    <method>Should change the description to the given value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>SubsectorSpecification+When_the_subsector_has_associated_clients</className>
+    <method>Should not allow inactivation</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>TierGroupSpecification+When_a_group_with_no_lists_is_inactivated</className>
+    <method>Should set the isactive flag to false</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>TierGroupSpecification+When_changing_the_description</className>
+    <method>Should change the description to the given value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>TierGroupSpecification+When_the_group_has_associated_lists</className>
+    <method>Should not allow group inactivation</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>TierListSpecification+When_a_lsit_with_no_values_is_inactivated</className>
+    <method>Should set the isactive flag to false</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>TierListSpecification+When_changing_the_description</className>
+    <method>Should change the description to the given value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>TierListSpecification+When_the_list_has_associated_tier_values</className>
+    <method>Should not allow inactivation</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>TierValueSpecification+When_changing_the_description</className>
+    <method>Should change the description to the given value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>TierValueSpecification+When_changing_the_sort_order</className>
+    <method>Should change the description to the given value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>TierValueSpecification+When_inactivating</className>
+    <method>Should set the isactive flag to false</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientTierCommandProcessorSpecification+When_all_preconditions_are_met</className>
+    <method>Should retrieve the tier value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientTierCommandProcessorSpecification+When_all_preconditions_are_met</className>
+    <method>Should retrieve the client</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientTierCommandProcessorSpecification+When_all_preconditions_are_met+When_the_status_is_active</className>
+    <method>Should assign the client tier</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientTierCommandProcessorSpecification+When_all_preconditions_are_met+When_the_status_is_active</className>
+    <method>Should retrieve the tier value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientTierCommandProcessorSpecification+When_all_preconditions_are_met+When_the_status_is_active</className>
+    <method>Should retrieve the client</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientTierCommandProcessorSpecification+When_all_preconditions_are_met+When_the_status_is_deleted</className>
+    <method>Should unassign the client tier</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientTierCommandProcessorSpecification+When_all_preconditions_are_met+When_the_status_is_deleted</className>
+    <method>Should retrieve the client</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientTierCommandProcessorSpecification+When_all_preconditions_are_met+When_the_status_is_deleted</className>
+    <method>Should retrieve the tier value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteClientCommandProcessorSpecification+When_the_client_exists</className>
+    <method>Should inactivate the Client</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteClientCommandProcessorSpecification+When_the_client_exists</className>
+    <method>Should retrieve the client</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteClientCommandProcessorSpecification+When_the_client_is_not_found</className>
+    <method>It shouldnt do anything</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteSectorCommandProcessorSpecification+When_the_sector_exists</className>
+    <method>Should inactivate the sector</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteSectorCommandProcessorSpecification+When_the_sector_exists</className>
+    <method>Should retrieve the sector</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteSectorCommandProcessorSpecification+When_the_sector_is_not_found</className>
+    <method>It shouldnt do anything</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteSubsectorCommandProcessorSpecification+When_the_subsector_exists</className>
+    <method>Should retrieve the subsector</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteSubsectorCommandProcessorSpecification+When_the_subsector_exists</className>
+    <method>Should inactivate the subsector</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteSubsectorCommandProcessorSpecification+When_the_subsector_is_not_found</className>
+    <method>It shouldnt do anything</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteTierGroupCommandProcessorSpecification+When_the_tier_group_exists</className>
+    <method>Should retrieve the tier group</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteTierGroupCommandProcessorSpecification+When_the_tier_group_exists</className>
+    <method>Should inactivate the tier group</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteTierGroupCommandProcessorSpecification+When_the_tier_group_is_not_found</className>
+    <method>It shouldnt do anything</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteTierListCommandProcessorSpecification+When_the_tier_list_exists</className>
+    <method>Should retrieve the tier list</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteTierListCommandProcessorSpecification+When_the_tier_list_exists</className>
+    <method>Should inactivate the tier list</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>DeleteTierListCommandProcessorSpecification+When_the_tier_list_is_not_found</className>
+    <method>It shouldnt do anything</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertSectorCommandProcessorSpecification</className>
+    <method>Should check if the sector exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertSectorCommandProcessorSpecification+When_the_sector_doesnt_exist</className>
+    <method>Should create and persist the sector</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertSectorCommandProcessorSpecification+When_the_sector_doesnt_exist</className>
+    <method>Should check if the sector exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertSectorCommandProcessorSpecification+When_the_sector_exists</className>
+    <method>Should check if the sector exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertSectorCommandProcessorSpecification+When_the_sector_exists</className>
+    <method>Should update the existing sector with the given description</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertSubsectorCommandProcessorSpecification</className>
+    <method>Should check if the subsector exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertSubsectorCommandProcessorSpecification+When_the_subsector_doesnt_exist</className>
+    <method>Should persist the subsector</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertSubsectorCommandProcessorSpecification+When_the_subsector_doesnt_exist</className>
+    <method>Should check if the subsector exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertSubsectorCommandProcessorSpecification+When_the_subsector_exists</className>
+    <method>Should check if the subsector exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertSubsectorCommandProcessorSpecification+When_the_subsector_exists</className>
+    <method>Should update the subsectors description</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertSubsectorCommandProcessorSpecification+When_the_subsector_exists+When_the_subsector_has_changed_sector</className>
+    <method>Should throw invalidoperationexception</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierGroupCommandProcessorSpecification</className>
+    <method>Should check if the tier group exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierGroupCommandProcessorSpecification+When_the_tier_doesnt_exist</className>
+    <method>Should check if the tier group exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierGroupCommandProcessorSpecification+When_the_tier_doesnt_exist</className>
+    <method>Should create and persist the tier group</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierGroupCommandProcessorSpecification+When_the_tier_group_exists</className>
+    <method>Should not insert the tier group</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierGroupCommandProcessorSpecification+When_the_tier_group_exists</className>
+    <method>Should check if the tier group exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierListCommandProcessorSpecification</className>
+    <method>Should check if the tier list exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierListCommandProcessorSpecification+When_the_tier_list_doesnt_exist</className>
+    <method>Should check if the tier list exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierListCommandProcessorSpecification+When_the_tier_list_doesnt_exist</className>
+    <method>Should persist the created tier list</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierListCommandProcessorSpecification+When_the_tier_list_exists</className>
+    <method>Should update the tier list</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierListCommandProcessorSpecification+When_the_tier_list_exists</className>
+    <method>Should check if the tier list exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierListCommandProcessorSpecification+When_the_tier_list_exists+When_the_list_has_changed_group</className>
+    <method>Should throw invalidoperationexception</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierValueCommandProcessorSpecification</className>
+    <method>Should check if the tier value exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierValueCommandProcessorSpecification+When_the_tier_value_doesnt_exist</className>
+    <method>Should persist the reacted tier value</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierValueCommandProcessorSpecification+When_the_tier_value_doesnt_exist</className>
+    <method>Should check if the tier value exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierValueCommandProcessorSpecification+When_the_tier_value_exists</className>
+    <method>Should check if the tier value exists</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierValueCommandProcessorSpecification+When_the_tier_value_exists</className>
+    <method>Should update the tiers sort order</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierValueCommandProcessorSpecification+When_the_tier_value_exists</className>
+    <method>Should update the tiers description</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>UpsertTierValueCommandProcessorSpecification+When_the_tier_value_exists+When_the_tier_value_has_changed_lists</className>
+    <method>Should throw invalidoperationexception</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>Client</className>
+    <method>Should issue a mapped client command</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>ClientTier</className>
+    <method>Should issue a mapped client tier command</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>Sector</className>
+    <method>Should issue a mapped sector command</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>Subsector</className>
+    <method>Should issue a mapped subsector command</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>TierGroup</className>
+    <method>Should issue a mapped tier group command</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>TierList</className>
+    <method>Should issue a mapped tier list command</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>TierValue</className>
+    <method>Should issue a mapped tier value command</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>VersionCheckerRevisionServiceSpecification+When_the_current_version_is_not_found</className>
+    <method>Should create a new version</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>VersionCheckerRevisionServiceSpecification+When_the_target_version_is_equal_to_the_current_version</className>
+    <method>Should reject the revision</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>VersionCheckerRevisionServiceSpecification+When_the_targets_version_is_higher_than_the_current_version</className>
+    <method>Should update the revision number</method>
+    <outcome>Passed</outcome>
+  </result>
+  <result>
+    <className>VersionCheckerRevisionServiceSpecification+When_the_targets_version_is_lower_than_the_current_version</className>
+    <method>Should reject the revision</method>
     <outcome>Passed</outcome>
   </result>
 </results>
